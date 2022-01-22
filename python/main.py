@@ -1,11 +1,17 @@
+import datetime
+import random
 import time
 import requests
 
 
 def run():
     while True:
+        timestamp = datetime.datetime.utcnow().strftime('%Y-%m-%dT%H:%M:%SZ')
+        print(timestamp)
+        temp = round(random.uniform(18, 22), 2)
+        humidity = round(random.uniform(40, 80), 2)
         response = requests.post('http://localhost:5000/api/metering',
-                                 data={'timestamp': '2022-01-22T21:24:00+00:00', 'temperature': 21.6, 'humidity': 64.2})
+                                 json={'timestamp': timestamp, 'temperature': temp, 'humidity': humidity})
         print(response)
         time.sleep(1)
 
