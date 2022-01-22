@@ -10,8 +10,10 @@ def run():
         print(timestamp)
         temp = round(random.uniform(18, 22), 2)
         humidity = round(random.uniform(40, 80), 2)
-        response = requests.post('https://meteringtest.azurewebsites.net/api/metering',
-                                 json={'timestamp': timestamp, 'temperature': temp, 'humidity': humidity})
+        # response = requests.post('https://meteringtest.azurewebsites.net/api/metering',
+        #                          json={'timestamp': timestamp, 'temperature': temp, 'humidity': humidity})
+        response = requests.post('http://localhost:5000/api/metering',
+                                  json={'timestamp': timestamp, 'temperature': temp, 'humidity': humidity})
         print(response)
         time.sleep(1)
 
