@@ -1,0 +1,16 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Metering.Api", "Metering.Api\Metering.Api.csproj", "{C558B7DE-921D-432B-B6FC-2B0F6BFF74BC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C558B7DE-921D-432B-B6FC-2B0F6BFF74BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C558B7DE-921D-432B-B6FC-2B0F6BFF74BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C558B7DE-921D-432B-B6FC-2B0F6BFF74BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C558B7DE-921D-432B-B6FC-2B0F6BFF74BC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
