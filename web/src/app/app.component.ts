@@ -41,7 +41,7 @@ export class AppComponent implements OnInit {
     },
     series: [
       {
-        type: 'spline',
+        type: 'line',
         name: 'Temperature',
         data: this.temperaturesData
       }
