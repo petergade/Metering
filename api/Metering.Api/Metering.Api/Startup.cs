@@ -1,4 +1,5 @@
 using Metering.Api.Hubs;
+using Metering.Api.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
@@ -28,6 +29,7 @@ namespace Metering.Api
                     .AllowAnyMethod()
                     .AllowAnyHeader());
             });
+            services.AddSingleton<TableStorageService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

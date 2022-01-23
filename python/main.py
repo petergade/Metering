@@ -15,7 +15,7 @@ def run():
         response = requests.post('http://localhost:5000/api/metering',
                                   json={'timestamp': timestamp, 'temperature': temp, 'humidity': humidity})
         print(response)
-        time.sleep(1)
+        time.sleep(60)
 
 
 # Press the green button in the gutter to run the script.
